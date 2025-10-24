@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke
+
+}
+
+body{
+    background-color: rgb(4, 38, 4);
+    overflow-x: hidden;  /* Impede o scroll horizontal */
+    
+}
+
+.navbar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 120px;
+    background-color: rgb(7, 90, 7);
+    color: whitesmoke;
+
+    background-image: url("imagens/Floresta.jpeg"); 
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: yellowgreen;
+}
+
+.menu .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#lema{
+    text-align: center;
+    margin: 40px;
+}
+
+#lema p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: greenyellow;
+}
+
+#lema img{
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+
+}
+
+#banner img {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover; 
+    margin: 0;
+    padding: 0;
+}
+
+#jogos {
+  text-align: center;  
+  padding: 40px 20px;   
+  color: whitesmoke;
+}
+
+#jogos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#jogos div {
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 18px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;     
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#jogos img {
+  width: 100%;
+  max-width: 250px;     
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#jogos p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#noticias {
+  padding: 40px 20px;
+  color: whitesmoke;
+  max-width: 800px;   
+  margin: 0 auto;     
+}
+
+#noticias h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid yellowgreen; 
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#noticias h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: yellowgreen;  
+}
+
+#noticias p {
+  margin-top: 10px;
+  line-height: 1.6;      
+  text-align: justify;   
+  background: rgba(255, 255, 255, 0.08); 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.fonte-ge {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: yellowgreen;
+}
+
+.fonte-ge a {
+  color: yellowgreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fonte-ge a:hover {
+  text-decoration: underline;
+  color: #b6ff00;
+}
+
+
+#jogadores h2{
+    font-size: 2em;            
+    font-weight: bold;         
+    color: whitesmoke;              
+    text-align: center;        
+    margin-bottom: 20px;       
+}
+
+
+#l1, #l2, #l3{
+    display: flex;             
+    justify-content: center;  
+    align-items: center;      
+    gap: 40px;                 
+    padding: 20px;             
+}
+
+
+#l1 img,  #l2 img, #l3 img{
+    width: 150px;              
+    height: auto;              
+    border-radius: 8px;        
+    transition: transform 0.3s ease-in-out;  
+}
+
+
+#l1 img:hover,  #l2 img:hover, #l3 img:hover{
+    transform: scale(1.1);     
+}
+
+footer {
+    background-color: rgb(7, 95, 7);      
+    color: #fff;                    
+    padding: 20px 0;                
+    text-align: center;             
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer-content {
+    max-width: 1200px;              
+    margin: 0 auto;                 
+}
+
+
+.social-links {
+    margin-top: 10px;               
+}
+
+.social-links a {
+    margin: 0 15px;                 
+    color: #fff;                   
+    text-decoration: none;          
+    font-size: 16px;                
+}
+
+.social-links a:hover {
+    color: #f39c12;                
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 14px;            
+    }
+
+    .social-links a {
+        margin: 0 10px;             
+    }
+}
+
