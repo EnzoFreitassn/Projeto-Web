@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nome": "Item de exemplo 1"
+  },
+  {
+    "id": 2,
+    "nome": "Item de exemplo 2"
+  },
+  {
+    "id": "8a05e32c-6469-485b-806d-877b95c2b0f5",
+    "time1": "real",
+    "placar": "3x1",
+    "time2": "inter",
+    "data": "2025-12-12"
+  }
+]

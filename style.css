@@ -1,239 +1,482 @@
-*{
+/* Reset básico */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: whitesmoke
-
+    color: whitesmoke;
 }
 
-body{
+/* Body */
+body {
     background-color: rgb(4, 38, 4);
-    overflow-x: hidden;  /* Impede o scroll horizontal */
-    
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
-.navbar{
+/* Container principal para limitar a largura */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
     justify-content: center;
     align-items: center;
     display: flex;
     height: 120px;
     background-color: rgb(7, 90, 7);
     color: whitesmoke;
-
-    background-image: url("imagens/Floresta.jpeg"); 
-    background-size: cover;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-
+    background-image: url("imagens/Floresta.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.menu{
+.menu {
     list-style: none;
     display: flex;
     gap: 40px;
     align-items: center;
-
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: yellowgreen;
 }
 
-.menu .logo a{
+.menu .logo a {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 50px;
 }
 
-#lema{
+/* Lema */
+#lema {
     text-align: center;
     margin: 40px;
 }
 
-#lema p{
+#lema p {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: greenyellow;
 }
 
-#lema img{
+#lema img {
     width: 80px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Banner */
 #banner img {
-    width: 100vw;
+    width: 100%;
     height: 400px;
-    object-fit: cover; 
+    object-fit: cover;
     margin: 0;
     padding: 0;
 }
 
+/* Jogos */
 #jogos {
-  text-align: center;  
-  padding: 40px 20px;   
-  color: whitesmoke;
+    text-align: center;
+    padding: 40px 20px;
+    color: whitesmoke;
 }
 
 #jogos h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 #jogos div {
-  background: rgba(255, 255, 255, 0.1); 
-  border-radius: 18px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;     
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #jogos img {
-  width: 100%;
-  max-width: 250px;     
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 #jogos p {
-  font-size: 1.2rem;
-  font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
+#jogos div .data-hora {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #c4ff9e;
+}
+
+/* Container geral do formulário */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #022d12;
+    border-radius: 16px;
+    box-shadow: 0 0 12px #004d1a;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    color: black;
+}
+
+/* Linha dupla */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botão principal */
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #008f2a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #00b33c;
+    box-shadow: 0px 0px 10px #00ff66;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #013d17;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: #006622;
+    padding: 16px;
+    font-size: 1.2rem;
+    color: #eaffea;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    color: #d7ffd7;
+    border-bottom: 1px solid #004d1a;
+}
+
+/* Botões Editar/Excluir */
+.action-btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    border: none;
+    transition: 0.2s;
+}
+
+.edit {
+    background: #0077cc;
+    color: white;
+}
+
+.edit:hover {
+    background: #0099ff;
+}
+
+.delete {
+    background: #cc0000;
+    color: white;
+}
+
+.delete:hover {
+    background: #ff1a1a;
+}
+
+/* Notícias */
 #noticias {
-  padding: 40px 20px;
-  color: whitesmoke;
-  max-width: 800px;   
-  margin: 0 auto;     
+    padding: 40px 20px;
+    color: whitesmoke;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #noticias h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
-  border-bottom: 2px solid yellowgreen; 
-  display: inline-block;
-  padding-bottom: 5px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid yellowgreen;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 #noticias h3 {
-  font-size: 1.4rem;
-  margin-top: 20px;
-  color: yellowgreen;  
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: yellowgreen;
 }
 
 #noticias p {
-  margin-top: 10px;
-  line-height: 1.6;      
-  text-align: justify;   
-  background: rgba(255, 255, 255, 0.08); 
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    margin-top: 10px;
+    line-height: 1.6;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .fonte-ge {
-  text-align: center;
-  font-size: 1rem;
-  margin-top: -10px;
-  margin-bottom: 30px;
-  color: yellowgreen;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: yellowgreen;
 }
 
 .fonte-ge a {
-  color: yellowgreen;
-  text-decoration: none;
-  font-weight: bold;
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .fonte-ge a:hover {
-  text-decoration: underline;
-  color: #b6ff00;
+    text-decoration: underline;
+    color: #b6ff00;
 }
 
-
-#jogadores h2{
-    font-size: 2em;            
-    font-weight: bold;         
-    color: whitesmoke;              
-    text-align: center;        
-    margin-bottom: 20px;       
+/* Seção Jogadores */
+#jogadores {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
 }
 
-
-#l1, #l2, #l3{
-    display: flex;             
-    justify-content: center;  
-    align-items: center;      
-    gap: 40px;                 
-    padding: 20px;             
+#jogadores h2 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+    color: #c8ffb5;
+    text-shadow: 0 0 10px #00ff55;
 }
 
-
-#l1 img,  #l2 img, #l3 img{
-    width: 150px;              
-    height: auto;              
-    border-radius: 8px;        
-    transition: transform 0.3s ease-in-out;  
+/* Filtros */
+#filtros-jogadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 35px;
 }
 
-
-#l1 img:hover,  #l2 img:hover, #l3 img:hover{
-    transform: scale(1.1);     
+#searchInput {
+    padding: 14px 18px;
+    width: 320px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
 }
 
+#botoesFiltro {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#botoesFiltro button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background: #0b5f1d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#botoesFiltro button:hover,
+#botoesFiltro .ativo {
+    background: #b6ff00;
+    color: #013300;
+    box-shadow: 0 0 10px #b6ff00;
+}
+
+/* Grid de Jogadores */
+#l1, #l2, #l3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Card Jogador */
+.card-jogador {
+    background: #013d17;
+    padding: 18px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 255, 0, 0.15);
+    transition: 0.25s;
+}
+
+.card-jogador:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(0, 255, 0, 0.3);
+}
+
+.card-jogador img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: 0.25s;
+}
+
+.card-jogador:hover img {
+    transform: scale(1.05);
+}
+
+.card-jogador p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #b6ff00;
+}
+
+/* Contador */
+#contador-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#contador-container h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: yellowgreen;
+}
+
+#contador {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#contador span {
+    color: #b6ff00;
+    font-size: 1.8rem;
+}
+
+/* Footer */
 footer {
-    background-color: rgb(7, 95, 7);      
-    color: #fff;                    
-    padding: 20px 0;                
-    text-align: center;             
+    background-color: rgb(7, 95, 7);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
     bottom: 0;
     width: 100%;
 }
 
-
 .footer-content {
-    max-width: 1200px;              
-    margin: 0 auto;                 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
 .social-links {
-    margin-top: 10px;               
+    margin-top: 10px;
 }
 
 .social-links a {
-    margin: 0 15px;                 
-    color: #fff;                   
-    text-decoration: none;          
-    font-size: 16px;                
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .social-links a:hover {
-    color: #f39c12;                
+    color: #f39c12;
 }
 
-/* Responsividade */
+/* Responsivo */
+@media (max-width: 600px) {
+    #searchInput {
+        width: 90%;
+    }
+    
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     footer {
-        font-size: 14px;            
+        font-size: 14px;
     }
 
     .social-links a {
-        margin: 0 10px;             
+        margin: 0 10px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu .logo a {
+        margin-right: 0;
     }
 }
 
